@@ -18,7 +18,14 @@ Codex Skill：根据初中数学题目图片生成中文错题复盘 Word 讲义
 
 ### 原题图片
 
-<img src="./assets/demo-original.jpg" width="360" alt="原题图片示例">
+<p>
+  <img src="./assets/demo-original.jpg" width="260" alt="原题图片示例 1">
+  <img src="./assets/demo-original-2.png" width="260" alt="原题图片示例 2">
+</p>
+<p>
+  <img src="./assets/demo-original-3.png" width="260" alt="原题图片示例 3">
+  <img src="./assets/demo-original-4.png" width="260" alt="原题图片示例 4">
+</p>
 
 ### 生成效果
 
@@ -58,6 +65,9 @@ math-error-handout/
 │   └── handout-standards.md
 └── assets/
     ├── demo-original.jpg
+    ├── demo-original-2.png
+    ├── demo-original-3.png
+    ├── demo-original-4.png
     ├── demo-output.pdf
     ├── wechat-reward.jpg
     └── alipay-reward.jpg
