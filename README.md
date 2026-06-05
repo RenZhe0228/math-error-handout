@@ -17,6 +17,11 @@ Codex Skill：根据初中数学题目图片生成中文错题复盘 Word 讲义
 ## 效果展示
 
 ### 原题图片
+<p>
+  <img src="./assets/demo-original.jpg" width="260" alt="原题图片示例 1">
+</p>
+
+### 生成效果
 
 <p>
   <img src="./assets/demo-original-2.png" width="260" alt="原题图片示例 2">
@@ -24,11 +29,6 @@ Codex Skill：根据初中数学题目图片生成中文错题复盘 Word 讲义
   <img src="./assets/demo-original-3.png" width="260" alt="原题图片示例 3">
 </p>
   <img src="./assets/demo-original-4.png" width="260" alt="原题图片示例 4">
-<p>
-  <img src="./assets/demo-original.jpg" width="260" alt="原题图片示例 1">
-</p>
-
-### 生成效果
 
 点击查看示例 PDF：
 
