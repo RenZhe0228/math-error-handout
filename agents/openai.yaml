@@ -1,0 +1,4 @@
+interface:
+  display_name: "Math Error Handout"
+  short_description: "生成中文数学错题复盘 Word 讲义"
+  default_prompt: "Use $math-error-handout to create a printable Chinese math error-review Word handout from the provided problem image."
