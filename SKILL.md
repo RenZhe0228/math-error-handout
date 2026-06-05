@@ -1,6 +1,8 @@
 ---
 name: math-error-handout
 description: Create printable Chinese middle-school mathematics error-review handouts as Word documents from problem images, PDFs, pasted text, or existing documents. Use when the user asks to convert math questions into 错题整理、错题复盘、打印讲义、学生练习版、教师版、步骤填空、同类变式题、混合练习, especially when diagrams must be cleaned, redrawn, or inserted into a DOCX.
+version: 1.0.0
+author: RenZhe0228
 ---
 
 # Math Error Handout

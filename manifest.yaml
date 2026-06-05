@@ -1,0 +1,42 @@
+name: math-error-handout
+version: 1.0.0
+description: >
+  Declarative manifest for the Math Error Handout skill. SKILL.md provides the
+  router and core workflow; this manifest records the always-needed standards
+  and the on-demand reference used when building or auditing a printable Chinese
+  middle-school math error-review Word handout.
+
+always_load:
+  - references/handout-standards.md
+
+axes:
+  output_version:
+    detect: |
+      Decide whether the user needs the default student practice version or a
+      teacher version. Use student by default. Use teacher only when the user
+      explicitly asks for teacher edition, immediate answers after each
+      question, or teaching notes.
+    values:
+      student: references/handout-standards.md
+      teacher: references/handout-standards.md
+    default: student
+    multi: false
+
+  source_type:
+    detect: |
+      Determine the input artifact: problem image, PDF, pasted text, or Word
+      document. If the source contains diagrams, the final DOCX must contain
+      actual diagrams, either cropped clean originals or redrawn clean
+      schematics.
+    values:
+      image: references/handout-standards.md
+      pdf: references/handout-standards.md
+      pasted-text: references/handout-standards.md
+      docx: references/handout-standards.md
+    default: image
+    multi: true
+
+references:
+  on_demand:
+    - condition: checking detailed layout, blank style, answer placement, diagram rules, or final reply format
+      path: references/handout-standards.md

@@ -36,13 +36,68 @@ Codex Skill：根据初中数学题目图片生成中文错题复盘 Word 讲义
 
 ## 使用方式
 
-把本仓库中的 `math-error-handout` 文件夹放到 Codex 的 skills 目录中，例如：
+### 方式一：从 Release 安装
+
+在 GitHub 仓库右侧点击 `Releases`，下载最新版本的：
+
+```text
+math-error-handout-v1.0.0.zip
+```
+
+解压后，确保目录结构是：
+
+```text
+math-error-handout/
+├── SKILL.md
+├── manifest.yaml
+├── agents/
+├── references/
+└── assets/
+```
+
+然后把整个 `math-error-handout` 文件夹放到 Codex skills 目录：
+
+Windows：
+
+```powershell
+$HOME\.codex\skills\math-error-handout
+```
+
+macOS / Linux：
+
+```bash
+~/.codex/skills/math-error-handout
+```
+
+重启 Codex 后即可使用。
+
+### 方式二：用 git clone 安装
+
+Windows：
+
+```powershell
+cd "$HOME\.codex\skills"
+git clone https://github.com/RenZhe0228/math-error-handout.git math-error-handout
+```
+
+macOS / Linux：
+
+```bash
+cd ~/.codex/skills
+git clone https://github.com/RenZhe0228/math-error-handout.git math-error-handout
+```
+
+### 方式三：手动复制安装
+
+下载本仓库源码，把整个 `math-error-handout` 文件夹复制到：
 
 ```text
 ~/.codex/skills/math-error-handout
 ```
 
-然后在 Codex 中这样调用：
+### 调用示例
+
+在 Codex 中这样调用：
 
 ```text
 使用 $math-error-handout，根据这张初中数学题图片生成一份可打印 Word 错题复盘讲义。7下，山西运城，北师大版。
@@ -54,12 +109,33 @@ Codex Skill：根据初中数学题目图片生成中文错题复盘 Word 讲义
 根据这张题图生成学生版错题讲义，要求有干净重画图、步骤填空、同类变式题和文末答案解析。
 ```
 
+### 验证安装
+
+如果 Codex 能识别 `$math-error-handout`，说明安装成功。你也可以让 Codex 执行：
+
+```text
+列出当前可用 skills，并确认是否包含 math-error-handout。
+```
+
+## Release 与 Packages 说明
+
+这个项目是 Codex Skill，不是 npm、Docker 或 Maven 包，因此 GitHub 的 `Packages` 可以为空。
+
+更推荐使用 GitHub `Releases` 发布安装包。Release 附件建议命名为：
+
+```text
+math-error-handout-v1.0.0.zip
+```
+
+用户下载 zip 后解压到 Codex skills 目录即可使用。
+
 ## 仓库结构
 
 ```text
 math-error-handout/
 ├── SKILL.md
 ├── README.md
+├── manifest.yaml
 ├── agents/
 │   └── openai.yaml
 ├── references/
